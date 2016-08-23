@@ -26,11 +26,11 @@ module.exports = {
       include: path.join(__dirname, 'src')
     },
     {
-      test: (path) => { path.endsWith('.module.styl') },
+      test: (path) => { return path.endsWith('.module.styl') },
       loader: 'style-loader!css-loader?localIdentName=[local]__[path][name]__[hash:base64:5]&modules&importLoaders=2&sourceMap!postcss-loader!stylus-loader',
     },
     {
-      test: (path) => { !path.endsWith('.module.styl') && path.endsWith('.styl') },
+      test: (path) => { return !path.endsWith('.module.styl') && path.endsWith('.styl') },
       loader: ExtractTextPlugin.extract('style-loader', ['css-loader', 'stylus-loader']),
     }]
   },

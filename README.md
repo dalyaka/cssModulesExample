@@ -47,3 +47,5 @@ const className = classnames('example-of-checkbox', styles.checkbox, {
 ```
 
 
+Пример результатирующего имени класса: example-of-checkbox checkbox__src-common-Checkbox-module__FAoB0 additionalClass__src-common-Checkbox-module__3abSx
+
